@@ -25,18 +25,18 @@
                                 Some fields are missing</div>
                             <form class="row g-3">
                                 <div class="col-md-5">
-                                    <label for="inputEmail4" class="form-label">Card #</label>
+                                    <label for="inputEmail4" class="form-label"><strong>Card #</strong></label>
                                     <input type="password" class="form-control" id="inputEmail4" placeholder="XXXXXXX">
                                 </div>
                                 <div class="col-md-3">
-                                    <label for="inputPassword4" class="form-label">CVC #</label>
+                                    <label for="inputPassword4" class="form-label"><strong>CVC #</strong></label>
                                     <input type="text" class="form-control" id="inputPassword4" placeholder="0000">
                                 </div>
                                 <div class="col-md-4">
-                                    <label for="inputPassword4" class="form-label">Amount</label>
+                                    <label for="inputPassword4" class="form-label"><strong>Amount</strong></label>
                                     <div class="row">
-                                        <div class="col-1 pe-0">
-                                            <p>$</p>
+                                        <div class="col-md-1 pe-0">
+                                            <p style="position:relative; left: 1em"><strong>$</strong></p>
                                         </div>
                                         <div class="col-11 ps-0">
                                             <input type="text" class="form-control" id="inputPassword4"
@@ -46,71 +46,78 @@
                                 </div>
                                 <!--Segunda fila-->
                                 <div class="col-6">
-                                    <label for="inputAddress" class="form-label">First Name</label>
+                                    <label for="inputAddress" class="form-label"><strong>First name</strong></label>
                                     <input type="text" class="form-control" id="inputAddress">
                                 </div>
                                 <div class="col-6">
-                                    <label for="inputAddress" class="form-label">Last Name</label>
+                                    <label for="inputAddress" class="form-label"><strong>Last name</strong></label>
                                     <input type="text" class="form-control" id="inputAddress">
                                 </div>
                                 <!--Tercera fila-->
                                 <div class="col-6">
-                                    <label for="inputAddress2" class="form-label">City</label>
+                                    <label for="inputAddress2" class="form-label"><strong>City</strong></label>
                                     <input type="text" class="form-control" id="inputAddress2">
                                 </div>
                                 <div class="col-md-3">
-                                    <label for="inputState" class="form-label">State</label>
+                                    <label for="inputState" class="form-label"><strong>State</strong></label>
                                     <select id="inputState" class="form-select">
                                         <option selected>Pick a state</option>
                                         <option>...</option>
                                     </select>
                                 </div>
                                 <div class="col-md-3">
-                                    <label for="inputZip" class="form-label">Postal</label>
+                                    <label for="inputZip" class="form-label"><strong>Postal Code</strong></label>
                                     <input type="text" class="form-control" id="inputZip">
                                 </div>
                                 <!--Ultima fila-->
                                 <div class="row g-3 justify-content-between">
-
+                                   
                                     <!-- Select Credit card -->
-                                    <div class="col-md-6">
-                                        <div class="col-md-5 bg-secondary" style="border-radius:10px">
-                                            <div class="form-check form-check-inline">
-                                                <input class="form-check-input" type="radio" name="inlineRadioOptions"
-                                                    id="inlineRadio1" value="option1">
-                                                <i class="fa-brands fa-cc-mastercard"></i><label
-                                                    class="form-check-label" for="inlineRadio1"></label></i>
+                                    
+                                    <div class="col-md-3" id="cards1">
+                                        <label for="cards1" class="form-label"><strong>We accept</strong></label>
+                                        <div class="bg-secondary p-2" style="border-radius:10px; width:fit-content">
+                                            <div class="form-check form-check-inline ps-0">
+                                                <span style="font-size: 0.8em"><input
+                                                        type="radio" name="inlineRadioOptions"
+                                                        id="inlineRadio1" value="option1" style="accent-color:gray"></span>
+                                                <span style="font-size: 1em; color: white;">
+                                                    <i class="fa-brands fa-cc-mastercard"></i></span>
                                             </div>
-                                            <div class="form-check form-check-inline">
-                                                <input class="form-check-input" type="radio" name="inlineRadioOptions"
-                                                    id="inlineRadio1" value="option1">
+                                            <div class="form-check form-check-inline ps-0">
+                                                <span style="font-size: 0.8em"><input
+                                                        type="radio" name="inlineRadioOptions"
+                                                        id="inlineRadio1" value="option1" style="accent-color:gray"></span>
                                                 <!-- logo visa -->
-                                                <i class="fa-brands fa-cc-visa"></i></i><label class="form-check-label"
-                                                    for="inlineRadio1"></label></i>
+                                                <span style="font-size: 1em; color: white;">
+                                                    <i class="fa-brands fa-cc-visa"></i></span>
                                             </div>
                                             <!-- ICONO AMEX -->
-                                            <div class="form-check form-check-inline">
-                                                <input class="form-check-input" type="radio" name="inlineRadioOptions"
-                                                    id="inlineRadio1" value="option1">
-                                                <i class="fa-brands fa-cc-amex"></i></i><label class="form-check-label"
-                                                    for="inlineRadio1"></label></i>
+                                            <div class="form-check form-check-inline ps-0">
+                                                <span style="font-size: 0.8em><input
+                                                        type="radio" name="inlineRadioOptions"
+                                                        id="inlineRadio1" value="option1" style="accent-color:gray"></span>
+                                                <span style="font-size: 1em; color: white;">
+                                                    <i class="fa-brands fa-cc-diners-club"></i></span>
                                             </div>
                                             <!-- ICONO OTher -->
-                                            <div class="form-check form-check-inline">
-                                                <input class="form-check-input" type="radio" name="inlineRadioOptions"
-                                                    id="inlineRadio1" value="option1">
-                                                <i class="fa-brands fa-google-pay" style="width: 10px;"></i></i><label
-                                                    class="form-check-label" for="inlineRadio1"></label></i>
+                                            <div class="form-check form-check-inline ps-0">
+                                                <span style="font-size: 0.8em"><input
+                                                        type="radio" name="inlineRadioOptions"
+                                                        id="inlineRadio1" value="option1" style="accent-color:gray"></span>
+                                                <span style="font-size: 1em; color: white;">
+                                                    <i class="fa-brands fa-cc-amex"></i></span>
                                             </div>
                                         </div>
-                                        <!-- final select metodo de pago -->
-
                                     </div>
+                                    <!-- final select metodo de pago -->
+
+
                                     <div class="col-6">
-                                        <label for="floatingTextarea2">Comments</label>
+                                        <label for="floatingTextarea2"><strong>Message</strong></label>
                                         <textarea class="form-control" id="floatingTextarea2"
                                             style="height: 100px"></textarea>
-                                        <p class="text-muted">Add any notes</p>
+                                        <p class="text-muted">Add any notes here.</p>
                                     </div>
                                 </div>
 
